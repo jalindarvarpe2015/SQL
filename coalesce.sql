@@ -7,3 +7,4 @@ It is often used to handle NULL values in queries, providing a way to substitute
 
 
 --COALESCE can take multiple arguments, and it evaluates each in order until it finds a non-NULL value.
+
