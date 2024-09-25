@@ -20,5 +20,38 @@ Cont_id   Cont_name
 1         HEMANT 
 2         NANDINI 
 3         PALLAVI 
-4          RAHULTable
+4         RAHUL
+
+1. Query Using UNION (removes duplicates):
+SELECT Emp_name as name  FROM employees
+UNION
+SELECT Cont_name as name  FROM contractors;
+
+output : 
+PALLAVI
+RASHI
+AKSHAY
+RAHUL
+HEMANT
+NANDINI
+
+2. Query Using UNION ALL (includes duplicates):
+
+SELECT Emp_name as name   FROM employees
+UNION ALL
+SELECT Cont_name as name FROM contractors;
+
+Output :
+name
+PALLAVI
+RASHI
+AKSHAY
+RAHUL
+HEMANT
+NANDINI
+PALLAVI
+RAHUL
+
+
+
 
